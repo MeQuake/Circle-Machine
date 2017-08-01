@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body > .inline {
@@ -12,6 +13,14 @@ body > .inline {
   height: 100%;
   position: relative;
   box-sizing: border-box;
+}
+
+.inline > img {
+  transition: filter 1.5s ease-in-out;
+}
+
+.inline > .backgroundTouched {
+  filter: brightness(35%);
 }
 
 body > .inline:first-child {
@@ -32,7 +41,7 @@ body > .inline:last-child {
   width: 200px;
   height: 200px;
   background-color: #2EF024;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
