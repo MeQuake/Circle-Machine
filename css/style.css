@@ -15,7 +15,7 @@ body > .inline {
 }
 
 .inline > img {
-  transition: filter 1.5s ease-in-out;
+  transition: filter .9s ease-in-out;
 }
 
 .inline > .backgroundTouched {
@@ -43,7 +43,7 @@ body > .inline:last-child {
   border: 4px solid;
   border-radius: 100px;
   animation: circle-color-change 6s infinite;
-  transition: top 1.5s ease-in-out;
+  transition: top .9s ease-in-out;
 }
 
 .touched {
