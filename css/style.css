@@ -11,6 +11,15 @@ body > .inline {
   width: 50%;
   height: 100%;
   position: relative;
+  box-sizing: border-box;
+}
+
+body > .inline:first-child {
+  border-right: 1px solid red;
+}
+
+body > .inline:last-child {
+  border-left: 1px solid red;
 }
 
 @keyframes circle-color-change {
