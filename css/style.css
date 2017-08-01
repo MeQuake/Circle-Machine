@@ -6,7 +6,6 @@ html, body {
 }
 
 body > .inline {
-  background-color: #deeaea;
   float: left;
   min-height: 100%;
   width: 50%;
@@ -21,10 +20,6 @@ body > .inline {
 
 .inline > .backgroundTouched {
   filter: brightness(35%);
-}
-
-body > .inline:first-child {
-  border-right: 1px solid red;
 }
 
 body > .inline:last-child {
@@ -45,6 +40,7 @@ body > .inline:last-child {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border: 4px solid;
   border-radius: 100px;
   animation: circle-color-change 6s infinite;
   transition: top 1.5s ease-in-out;
