@@ -5,7 +5,7 @@ html, body {
   overflow-x: hidden;
 }
 
-body > .inline {
+.inline {
   float: left;
   min-height: 100%;
   width: 50%;
@@ -14,7 +14,11 @@ body > .inline {
   box-sizing: border-box;
 }
 
-.inline > img {
+.inline > .background {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-clip: border-box;
   transition: filter .9s ease-in-out;
 }
 
@@ -22,8 +26,20 @@ body > .inline {
   filter: brightness(35%);
 }
 
-body > .inline:last-child {
-  border-left: 1px solid #b38f8f;
+.inline > .background-left {
+  background-image: url("../img/left.jpg");
+}
+
+.inline > .background-right {
+  background-image: url("../img/right.jpg");
+}
+
+.inline:first-child {
+  border-right: 1px solid #c7baba;
+}
+
+.inline:last-child {
+  border-left: 1px solid #c7baba;
 }
 
 @keyframes circle-color-change {
@@ -32,7 +48,7 @@ body > .inline:last-child {
   100% {background-color:#2EF024}
 }
 
-.circle {
+.inline > .circle {
   width: 200px;
   height: 200px;
   background-color: #2EF024;
@@ -46,6 +62,6 @@ body > .inline:last-child {
   transition: top .9s ease-in-out;
 }
 
-.touched {
+.inline > .touched {
     top: 25%;
 }
