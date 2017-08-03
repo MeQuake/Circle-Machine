@@ -63,5 +63,24 @@ html, body {
 }
 
 .inline > .touched {
-    top: 25%;
+  top: 25%;
+}
+
+.inline > .circle > .details {
+  position: inherit;
+  width: 500px;
+  height: 500px;
+}
+
+.inline > .circle > .details > img {
+  float: left;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.inline > .circle > .details > .description {
+  float: left;
+  width: 200px;
+  height: 200px;
 }
