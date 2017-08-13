@@ -73,6 +73,12 @@ html, body {
 .inline > .circle > .details {
   width: 500px;
   height: 500px;
+  opacity: 0;
+  transition: opacity .9s ease-in-out;
+}
+
+.inline > .circle > .touched {
+  opacity: 1;
 }
 
 .inline > .circle > .details > img {
