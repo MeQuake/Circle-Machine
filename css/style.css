@@ -42,45 +42,47 @@ html, body {
   border-left: 1px solid #c7baba;
 }
 
+.inline > .circle {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 70%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  transition: top .9s ease-in-out;
+}
+
 @keyframes circle-color-change {
   0%   {background-color:#2EF024}
   50%  {background-color:#48F7F7}
   100% {background-color:#2EF024}
 }
 
-.inline > .circle {
-  width: 200px;
-  height: 200px;
+.inline > .circle > img {
   background-color: #2EF024;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border: 4px solid;
   border-radius: 100px;
   animation: circle-color-change 6s infinite;
-  transition: top .9s ease-in-out;
 }
 
 .inline > .touched {
-  top: 25%;
+  top: 50%;
 }
 
 .inline > .circle > .details {
-  position: inherit;
   width: 500px;
   height: 500px;
 }
 
 .inline > .circle > .details > img {
-  float: left;
   margin-top: 20px;
   width: 200px;
   height: 200px;
 }
 
 .inline > .circle > .details > .description {
-  float: left;
+  float: right;
   width: 200px;
   height: 200px;
 }
