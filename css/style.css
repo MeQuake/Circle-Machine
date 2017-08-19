@@ -71,10 +71,12 @@ html, body {
 }
 
 .inline > .circle > .details {
+  margin-top: 20px;
+  color: white;
   width: 500px;
   height: 500px;
   opacity: 0;
-  transition: opacity .9s ease-in-out;
+  transition: opacity .9s ease-in-out
 }
 
 .inline > .circle > .touched {
@@ -82,9 +84,9 @@ html, body {
 }
 
 .inline > .circle > .details > img {
-  margin-top: 20px;
   width: 200px;
   height: 200px;
+  filter: brightness(200%);
 }
 
 .inline > .circle > .details > .description {
