@@ -23,7 +23,7 @@ html, body {
 }
 
 .inline > .backgroundTouched {
-  filter: brightness(35%);
+  filter: brightness(25%);
 }
 
 .inline > .background-left {
@@ -47,7 +47,7 @@ html, body {
   text-align: center;
   left: 50%;
   top: 70%;
-  width: 500px;
+  width: 650px;
   height: 500px;
   transform: translate(-50%, -50%);
   transition: top .9s ease-in-out;
@@ -72,9 +72,7 @@ html, body {
 
 .inline > .circle > .details {
   margin-top: 20px;
-  color: white;
-  width: 500px;
-  height: 500px;
+  height: 200px;
   opacity: 0;
   transition: opacity .9s ease-in-out
 }
@@ -84,13 +82,36 @@ html, body {
 }
 
 .inline > .circle > .details > img {
-  width: 200px;
-  height: 200px;
-  filter: brightness(200%);
+  width: 325px;
+  height: 174px;
+  filter: brightness(100%);
+  float: left;
 }
 
 .inline > .circle > .details > .description {
   float: right;
-  width: 200px;
+  text-align: left;
+  font-family: arial;
+  color: white;
+  width: 275px;
   height: 200px;
+}
+
+.inline > .circle > .details > .description > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.inline > .circle > .details > .description > .title {
+  font-size: 18px;
+}
+
+.inline > .circle > .details > .visit > .visit-button {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 50%;
+  height: 5%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border: 3px solid gray;
 }
